@@ -96,7 +96,7 @@ else{
                           subject: 'Meeting is scheduled',
                           text: 'Meeting is schedule on' +time.convertToLocalTime(req.body.start)+
                             'Please login with below link to see schedule, :\n\n' +
-                            'http://localhost:4200/login/'  + '\n\n'+
+                            'http://webcloud360.com/login/'  + '\n\n'+
                             'Thanks and Regards \n'+req.body.adminName
                             
                             
@@ -219,7 +219,7 @@ result.newData = datafield;
                           subject: 'Meeting is schedule',
                           text: 'Meeting is schedule on ' +time.convertToLocalTime(req.body.start)+
                             'Please login with below link to see details of meeting,\n\n' +
-                            'http://localhost:4200/login/'  + '\n\n'+
+                            'http://webcloud360.com/login'  + '\n\n'+
                             'Thanks and Regards \n'+req.body.adminName
                             
                             
@@ -369,7 +369,7 @@ result.newData = datafield;
                           subject: 'Meeting is cancelled',
                           text: 'Meeting is cancelled of date  ' +this.start+
                             'Please login with below link to see details of meeting,\n\n' +
-                            'http://localhost:4200/login/'  + '\n\n'+
+                            'http://webcloud360.com/login/'  + '\n\n'+
                             'Thanks and Regards \n'+this.adminName
                             
                             
@@ -464,8 +464,7 @@ let findAllMeeting = (req,res) => {
         
     } else if (check.isEmpty(result)) {
         logger.info('No User Found', 'Calender Controller: findAllMeeting')
-        let apiResponse = response.generate(true, 'No User Found', 404, null)
-        res.send(apiResponse)
+        
     } 
     else {
       //  console.log(result.newData[0].title);
@@ -565,7 +564,7 @@ let findAllMeeting = (req,res) => {
           subject: 'Gentel Remainder:-Meeting is scheduled',
           text: 'Meeting is scheduled of date  ' +newData[j].start+
             'Please login with below link to see details of meeting,\n\n' +
-            'http://localhost:4200/login/'  + '\n\n'+
+            'http://webcloud360.com/login/'  + '\n\n'+
             'Thanks and Regards \n'+newData[j].adminName
             
             
@@ -638,7 +637,7 @@ let findAllMeeting = (req,res) => {
           subject: 'Gentel Remainder:-Meeting is scheduled',
           text: 'Meeting is scheduled of date  ' +newData[j].start+
             'Please login with below link to see details of meeting,\n\n' +
-            'http://localhost:4200/login/'  + '\n\n'+
+            'http://webcloud360.com/login/'  + '\n\n'+
             'Thanks and Regards \n'+newData[j].adminName
             
             
@@ -725,7 +724,7 @@ let findAllMeeting = (req,res) => {
               subject: 'Gentel Remainder:-Meeting is scheduled',
               text: 'Meeting is scheduled of date  ' +newData[j].start+
                 'Please login with below link to see details of meeting,\n\n' +
-                'http://localhost:4200/login/'  + '\n\n'+
+                'http://webcloud360.com/login/'  + '\n\n'+
                 'Thanks and Regards \n'+newData[j].adminName
                 
                 
@@ -795,7 +794,7 @@ let findAllMeeting = (req,res) => {
               subject: 'Gentel Remainder:-Meeting is scheduled',
               text: 'Meeting is scheduled of date  ' +newData[j].start+
                 'Please login with below link to see details of meeting,\n\n' +
-                'http://localhost:4200/login/'  + '\n\n'+
+                'http://webcloud360.com/login/'  + '\n\n'+
                 'Thanks and Regards \n'+newData[j].adminName
                 
                 
