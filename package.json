@@ -12,14 +12,14 @@
   "dependencies": {
     "apidoc": "^0.17.6",
     "async": "^2.6.1",
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^3.0.2",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "cron": "^1.5.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "express-socket.io-session": "^1.3.2",
-    "jsonwebtoken": "^8.1.0",
+    "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
@@ -29,7 +29,7 @@
     "pino": "^4.7.2",
     "redis": "^2.8.0",
     "request": "^2.83.0",
-    "shortid": "^2.2.8",
+    "shortid": "^2.2.14",
     "socket.io": "^2.0.4",
     "socket.io-client": "^2.1.1"
   }
